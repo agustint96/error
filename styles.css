@@ -10,8 +10,8 @@ html {
   }
   .container-1 h1, .container-1 p{
     font-family: 'Cedarville Cursive', cursive;
-font-family: 'Fira Sans', sans-serif;
-font-family: 'Victor Mono', monospace;
+  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Victor Mono', monospace;
 
     color: #2c343f;
   }
@@ -29,18 +29,9 @@ font-family: 'Victor Mono', monospace;
         --c2:#dbdde7;
         
         --g:at calc(100%/3) 25%,#0000 75%,;
-        background:
-          conic-gradient(var(--g)var(--c1) 0),
-          conic-gradient(var(--g)var(--c2) 0) 0 var(--s),
-          repeating-conic-gradient(at calc(200%/3),
-            var(--c1) 0 25%,var(--c2) 0 50%);
-        background-size: var(--s) calc(4*var(--s)/3);
-      
-      
-      
-      
+       
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.91);
+    background-color: var(--c2);
     width: 30em;
     height: auto;
     align-items: center;
@@ -49,9 +40,15 @@ font-family: 'Victor Mono', monospace;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2; /* Establecer un valor mayor que el z-index del fondo */
+    z-index: 2; 
   }
 
+
+  .sombra {
+    -webkit-box-shadow: 10px 10px 0px 2px rgba(109,108,158,1);
+-moz-box-shadow: 10px 10px 0px 2px rgba(109,108,158,1);
+box-shadow: 10px 10px 0px 2px rgba(109,108,158,1);
+  }
 
 
 
